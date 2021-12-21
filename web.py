@@ -3,8 +3,9 @@ import streamlit as st
 st.write("""My first app""")
 Image = st.file_uploader("Pick a file")
 if Image is not None:
-    image = Image.convert('RGB')
-    st.write(image)
+    Image = Image.read()
+    # image = Image.convert('RGB')
+    st.write(Image)
     # boxes = [line[0] for line in result]
     # txts = [line[1][0] for line in result]
     # scores = [line[1][1] for line in result]
