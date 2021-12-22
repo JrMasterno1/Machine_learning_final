@@ -10,7 +10,9 @@ st.markdown("<h1 style='text-align: center; color: black;'>OCR</h1>", unsafe_all
 def select_language():
     option = st.selectbox(
         'Choose language',
-        ('English', 'Chinese', 'Korean', 'Japan'))
+        ('Arabic', 'Welsh', 'Hindi', 'Nepali', 'Spanish', 'Tamil', \
+        'English', 'Chinese', 'Korean', 'Japan', 'French', \
+        'German', 'Italian'))
     return option
 
 def select_image():
